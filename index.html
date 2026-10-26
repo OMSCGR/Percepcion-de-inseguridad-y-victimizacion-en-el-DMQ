@@ -248,6 +248,24 @@ td.num, th.num { text-align:right; white-space:nowrap; }
   .mob-only { display:block; margin-top:4px; }
   td.col-vals, th.col-vals { white-space:normal; }
 }
+/* Ajuste localizado: sección 5, calidad del emparejamiento */
+#calidad .grid-2 { grid-template-columns: minmax(0, 1.7fr) minmax(245px, .8fr); gap:14px; align-items:stretch; }
+#calidad .table-wrap { min-width:0; padding:14px; height:100%; box-sizing:border-box; }
+#calidad .bullet-card { height:100%; box-sizing:border-box; padding:14px; }
+#calidad .bullet-card ul { padding-left:18px; }
+#calidad .bullet-card li { font-size:11px; line-height:1.35; margin:7px 0; }
+#calidad .table-wrap table { width:100%; table-layout:fixed; font-size:11px; }
+#calidad .table-wrap th, #calidad .table-wrap td { padding:8px 6px; overflow-wrap:break-word; }
+#calidad .table-wrap th:nth-child(1), #calidad .table-wrap td:nth-child(1) { width:25%; }
+#calidad .table-wrap th:nth-child(2), #calidad .table-wrap td:nth-child(2) { width:14%; }
+#calidad .table-wrap th:nth-child(3), #calidad .table-wrap td:nth-child(3) { width:19%; }
+#calidad .table-wrap th:nth-child(4), #calidad .table-wrap td:nth-child(4) { width:16%; }
+#calidad .table-wrap th:nth-child(5), #calidad .table-wrap td:nth-child(5) { width:13%; }
+#calidad .table-wrap th:nth-child(6), #calidad .table-wrap td:nth-child(6) { width:13%; }
+#calidad .table-wrap th:last-child { white-space:nowrap; }
+@media (max-width: 980px) {
+  #calidad .grid-2 { grid-template-columns:1fr; }
+}
 </style>
 </head>
 <body>
